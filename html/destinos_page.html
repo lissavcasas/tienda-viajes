@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours</title>
+    <!--  BOOTSTRAP CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--  FONT AWESOME ICONS -->
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/fontello.css">
+
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <!--  CABECERA -->
+    <header>
+        <!--  MENU DE NAVEGACION -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+
+                <!-- Marca de empresa -->
+                <a class="navbar-brand" href="../index.html">
+                    <p id="logo" class="my-auto fs-6">Viaja Punto Pe</p>
+                </a>
+
+                <!-- Botón menú hamnburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu Collapse -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <!--  Botón menú hamnburguesa -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fe fe-x"></i>
+                    </button>
+                    <!-- Menu items -->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" id="navbarQuienesomos" href="../html/quienes_somos_page.html"
+                                aria-haspopup="true" aria-expanded="false">
+                                Quiénes somos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " id="navbarSobreReciclaje" href="../html/destinos_page.html"
+                                aria-haspopup="true" aria-expanded="false">
+                                Destinos
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" id="navbarMovilizacion" href="../html/testimonios_page.html"
+                                aria-haspopup="true" aria-expanded="false">
+                                Experiencias
+                            </a>
+                        </li>
+
+                    </ul>
+                    <!--  Botón CTA -->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="../html/cesta_page.html">
+                                <span class="fa fa-shopping-cart my-1 mx-4 nav-link"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar-btn btn btn-success lift ms-auto" href="../html/contacto_page.html">
+                                Contáctanos
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--  BANNER -->
+    <section class=" col-12 mb-5 img-banner b1">
+    </section>
+
+    <!--   BUSCADOR -->
+    <section class="text-center mb-4">
+        <input id="buscador" class="col-sm-4" type="text" placeholder="Búsqueda por nombre">
+    </section>
+
+    <!-- TITULO -->
+    <section class="container">
+        <h1>Tours</h1>
+        <hr>
+    </section>
+
+    <!-- BOTONES PARA FILTRAR RESULTADOS -->
+    <section class="container text-center mb-4">
+        <button type="button" class="btn btn-success filter-btn" data-region="Todos">Todos</button>
+        <button type="button" class="btn btn-success filter-btn" data-region="Costa">Costa</button>
+        <button type="button" class="btn btn-success filter-btn" data-region="Sierra">Sierra</button>
+        <button type="button" class="btn btn-success filter-btn" data-region="Selva">Selva</button>
+    </section>
+
+    <!-- ORDENAR RESULTADOS -->
+    <section class="containertext-center text-center mb-4">
+        <button type="button" id="btn-ordenar-asc" class="btn btn-success">Nombre ASC</button>
+        <button type="button" id="btn-ordenar-desc" class="btn btn-success">Nombre DESC</button>
+    </section>
+
+    <!-- ORDENAR POR CALIFICACION -->
+    <section class="container text-center mb-4">
+        <button type="button" class="btn btn-success filter-punt" data-puntuacion="All">Todos</button>
+        <button type="button" class="btn btn-success filter-punt" data-puntuacion="4">
+            <span class="fa fa-star active-star"></span>
+            <span class="fa fa-star active-star"></span>
+            <span class="fa fa-star active-star"></span>
+            <span class="fa fa-star active-star"></span>
+        </button>
+        <button type="button" class="btn btn-success filter-punt" data-puntuacion="5">
+            <span class="fa fa-star active-star"></span>
+            <span class="fa fa-star active-star"></span>
+            <span class="fa fa-star active-star"></span>
+            <span class="fa fa-star active-star"></span>
+            <span class="fa fa-star active-star"></span>
+        </button>
+    </section>
+    <!-- ORDENAR POR PRECIO - DESCENDENTE -->
+    <section class="containertext-center text-center mb-4">
+        <button type="button" id="btn-ordenar-precio-asc" class="btn btn-primary">PRECIO ASC</button>
+        <button type="button" id="btn-ordenar-precio-desc" class="btn btn-primary">PRECIO DESC</button>
+    </section>
+    <!-- ORDENAR POR PRECIO -->
+    <div class="container text-center mb-4">
+        <h5>Ordenar por precio de tour</h5>
+        <input type="range" id="rango" min="0" max="3000"><label id="numeroRango">0</label>
+    </div>
+
+    <!-- LISTAR PAQUETES -->
+    <section class="container">
+        <div id="paquetes-fila" class="row mx auto">
+        </div>
+    </section>
+
+    <!-- Burbuja de redes -->
+    <div class="conte">
+        <input type="checkbox" id="btn-mas">
+        <div class="redes">
+            <a href="https://web.whatsapp.com/" class="icon-whatsapp"></a>
+            <a href="https://www.youtube.com/" class="icon-youtube"></a>
+            <a href="https://www.facebook.com/" class="icon-facebook"></a>
+        </div>
+        <div class="btn-mas">
+            <label for="btn-mas" class="icon-right-open"></label>
+        </div>
+    </div>
+
+    <!-- CONTENEDOR FECHA Y HORA -->
+    <footer class="container-fluid bg-dark text-white mt-5 p-3">
+        <div class="container">
+            <div class="row g-0 ">
+                <div id="fecha" class="col-6">
+                    Fecha:
+                </div>
+                <div id="hora" class="col-6">
+                    Hora:
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+<script type="module" src="../js/main.js"></script>
