@@ -61,10 +61,13 @@ const mostrarPaquetes = (paquetes) => {
 
     let paquetesArr = paquetes.map(paquete => {
         const imagen = paquete.imagen;
+        const ruta = imagen.substring(3, imagen.length);
+        console.log(ruta);
+
         return `
                 <div class="col-lg-3 col-md-4 col-sm-6 col-8 mx-auto">
                     <div class="card">
-                        <img src=.${imagen.substring(3, imagen.length)} alt=${paquete.nombre} class="card-img-top img-fluid">
+                        <img src=${ruta} alt=${paquete.nombre} class="card-img-top img-fluid">
                             <div class="card-body">
                                 <h5>${paquete.nombre}</h5>
                                 <p >${paquete.partida}</p>
