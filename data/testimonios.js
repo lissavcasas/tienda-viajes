@@ -111,7 +111,7 @@ const testimonios = [{
 },
 {
     "id": 12,
-    "imagen": "../img/per_cumbe.jpg",
+    "imagen": "../img/per_orqui.jpg",
     "sitio": "Cumbemayo",
     "nombre": "Mariano",
     "apellidos": "Guevara",
