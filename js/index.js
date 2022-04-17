@@ -53,7 +53,7 @@ const repetirCadaSegundo = () => {
 const cargarCarrusel = () => {
     contador++;
     if (contador > 3) contador = 1;
-    carrusel.setAttribute("src", "../img/banner" + contador + ".jpg");
+    carrusel.setAttribute("src", "img/banner" + contador + ".jpg");
     setTimeout(cargarCarrusel, 3000);
 }
 //Creando función para mostrar los paquetes en el documento
