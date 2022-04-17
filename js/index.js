@@ -60,10 +60,11 @@ const cargarCarrusel = () => {
 const mostrarPaquetes = (paquetes) => {
 
     let paquetesArr = paquetes.map(paquete => {
+
         return `
                 <div class="col-lg-3 col-md-4 col-sm-6 col-8 mx-auto">
                     <div class="card">
-                        <img src=.${paquete.imagen.slice(3, -1)} alt=${paquete.nombre} class="card-img-top img-fluid">
+                        <img src=.${paquete.imagen.slice(4, -1)} alt=${paquete.nombre} class="card-img-top img-fluid">
                             <div class="card-body">
                                 <h5>${paquete.nombre}</h5>
                                 <p >${paquete.partida}</p>
